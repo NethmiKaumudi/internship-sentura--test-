@@ -1,12 +1,12 @@
 import React from 'react';
-import TaskComponent from './TaskComponent';
+import WeavyTaskComponent from "./WeavyTaskCompnent";
 
 const TaskListComponent = ({ tasks }) => {
     return (
         <div className="task-list">
             <h2>Task List</h2>
             {tasks.map((task) => (
-                <TaskComponent key={task.id} task={task} />
+                <WeavyTaskComponent key={task.id} task={task} />
             ))}
         </div>
     );
