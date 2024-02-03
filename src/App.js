@@ -13,7 +13,7 @@ function App() {
 
         const fetchData = async () => {
             try {
-                const response = await fetch('https://56f994a6fa484de1ab55f48862c005a4.weavy.io');
+                const response = await fetch('https://56f994a6fa484de1ab55f48862c005a4.weavy.io/POST /api/users');
                 const data = await response.json();
                 setTasks(data);
             } catch (error) {
