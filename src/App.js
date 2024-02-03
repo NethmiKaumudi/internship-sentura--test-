@@ -1,7 +1,8 @@
 import './App.css';
 import {useEffect, useState} from "react";
-import {weavyConfig} from "./weavy-config";
 import TaskListComponent from "./component/TaskListComponent";
+import {weavyConfig} from "./weavy-config";
+
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
 
         const fetchData = async () => {
             try {
-                const response = await fetch('https://api.example.com/tasks');
+                const response = await fetch('https://56f994a6fa484de1ab55f48862c005a4.weavy.io');
                 const data = await response.json();
                 setTasks(data);
             } catch (error) {
